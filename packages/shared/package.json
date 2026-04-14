@@ -1,0 +1,21 @@
+{
+  "name": "@zglm/shared",
+  "version": "0.1.0",
+  "description": "Shared types and utilities for ZGLM",
+  "type": "module",
+  "files": [
+    "dist"
+  ],
+  "main": "./dist/index.js",
+  "types": "./dist/index.d.ts",
+  "scripts": {
+    "build": "tsup",
+    "dev": "tsup --watch",
+    "clean": "rm -rf dist"
+  },
+  "devDependencies": {
+    "typescript": "^5.5.0",
+    "tsup": "^8.1.0",
+    "@types/node": "^20.14.0"
+  }
+}
