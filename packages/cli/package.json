@@ -1,0 +1,48 @@
+{
+  "name": "@zglm/cli",
+  "version": "0.1.0",
+  "description": "Z.ai GLM Agentic CLI — GLM to the terminal",
+  "type": "module",
+  "bin": {
+    "zglm": "./dist/index.js"
+  },
+  "files": [
+    "dist"
+  ],
+  "main": "./dist/index.js",
+  "types": "./dist/index.d.ts",
+  "scripts": {
+    "build": "tsup",
+    "dev": "tsup --watch",
+    "clean": "rm -rf dist"
+  },
+  "keywords": ["z.ai", "glm", "cli", "ai", "agent", "zhipuai"],
+  "engines": {
+    "node": ">=20.0.0"
+  },
+  "dependencies": {
+    "@zglm/shared": "workspace:*",
+    "ink": "^4.4.1",
+    "react": "^18.3.1",
+    "ink-text-input": "^5.0.1",
+    "ink-select-input": "^5.0.0",
+    "chalk": "^5.3.0",
+    "better-sqlite3": "^9.6.0",
+    "marked": "^12.0.0",
+    "marked-terminal": "^7.1.0",
+    "zod": "^3.23.0",
+    "commander": "^12.1.0",
+    "conf": "^13.0.0",
+    "execa": "^9.3.0",
+    "globby": "^14.0.1",
+    "ignore": "^5.3.1",
+    "nanoid": "^5.0.7"
+  },
+  "devDependencies": {
+    "@types/react": "^18.3.3",
+    "@types/better-sqlite3": "^7.6.8",
+    "@types/node": "^20.14.0",
+    "typescript": "^5.5.0",
+    "tsup": "^8.1.0"
+  }
+}
